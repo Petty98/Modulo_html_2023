@@ -23,12 +23,12 @@ h2{
     
 }
 
-/* h4{
+h4{
     margin: 0px;
     margin-top: 3px;
     font-weight: lighter;
     background-color: #CCCC88;
-} */
+}
 
 a{
 text-decoration: none;
@@ -48,6 +48,7 @@ color: #0645ad;
     padding: 8px;
     float: left;
     width: calc(100% - 286px) ; 
+    line-height: 20Spx;
 }
 
 .p1{
@@ -69,13 +70,14 @@ margin-bottom: 10px;
     width: 286px;
     border: 1px solid black;
     text-align: center;
-    padding: 2px;
+    padding: 5px;
     margin-top: 8px;
 }
 
-.w30 img{
+.imagenJordan img{ 
     width: 100%;
-    padding: 4px;
+    padding-top: 4px;
+    padding-bottom: 2px;
 }
 
 .w40{
@@ -96,7 +98,8 @@ margin-bottom: 10px;
 .columnas{
 font-size: 75%;
 text-align: left;
-/* overflow: hidden; */
+overflow: hidden;
+line-height: 18px;
 }
 
 .x10{
@@ -125,6 +128,7 @@ float: left;
 padding: 0px;
 margin-left: 8px;
 marks: none;
+line-height: 25px;
 }
 
 li::marker {
@@ -150,7 +154,7 @@ font-weight: 100;
 text-decoration: none;
 }
 
-.carreraDeportiva{
+.carreraDeportiva, .trayectoria{
 margin: 0px;
 margin-bottom: 3px;
 margin-top: 3px;
@@ -158,3 +162,24 @@ font-weight: lighter;
 text-align: center;
 background-color: #CCCC88;
 }
+
+h4 img{
+/* margin: 3px; */
+margin-top: 4px;
+width: 30px;
+margin-bottom: 2px;    
+}
+
+.clubProfesional, .seleccionNacional{
+margin: 0px;
+margin-bottom: 3px;
+margin-top: 3px;
+font-weight: lighter;
+text-align: center;
+background-color: #FAF0E6;
+}
+
+.olimpiadas{
+vertical-align: middle;
+}
+
