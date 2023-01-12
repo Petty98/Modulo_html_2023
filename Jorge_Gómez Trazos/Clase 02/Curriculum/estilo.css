@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+
+#sobremi {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    width: 40%;
+    float: left;
+}
+
+#experiencia{
+margin-top: 0px;
+width: 60%;
+float: left;
+padding: 30px;
+}
+
+.ImagenBart{
+    border-radius: 20px;
+    width: 100%;
+
+}
+
+.floatw50{
+    float:left;
+    width: 50%;
+}
+
+.floatw60{
+    float:left;
+    width: 50%;
+}

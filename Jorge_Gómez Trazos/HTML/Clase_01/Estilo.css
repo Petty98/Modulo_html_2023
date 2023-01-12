@@ -1,0 +1,27 @@
+/* Selector */
+div {
+    color: blue
+}
+
+img {
+    width: 600px; 
+    height: 50%;
+}
+
+.principal {
+    border: 3px solid black;
+    width: 50%;
+    padding: px;
+}
+
+.resaltado {
+    color: rgb(0, 0, 0);
+    background-color: darkorange;
+    width: 95%;
+    padding: 5px;
+    height: 80px;
+}
+
+#elementoSecundario {
+    color: blueviolet;
+}
