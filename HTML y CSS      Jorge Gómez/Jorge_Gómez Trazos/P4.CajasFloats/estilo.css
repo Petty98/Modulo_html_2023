@@ -1,0 +1,73 @@
+*{
+box-sizing: border-box;
+}
+
+body{
+overflow: hidden;
+}
+
+.rojo{
+background-color: red;
+width: 50%;
+height: 300px;
+float: left;
+}
+
+.azul{
+background-color: blue;
+width: 50%;
+float: left;
+width: 150px;
+height: 150px;
+}
+
+.verde{
+background-color: green;
+width: 50%;
+float: left;
+width: 150px;
+height: 150px;
+}
+
+.amarillo{
+background-color: yellow;
+width: 50%;
+float: left;
+width: 150px;
+height: 150px;
+}
+
+.blanco{
+background-color: white;
+width: 50%;
+float: left;
+width: 150px;
+height: 150px;
+}
+
+.rosa{
+background-color: pink;
+width: 50%;
+float: left;
+width: 150px;
+height: 50px;
+}
+
+.morado{
+background-color: purple;
+width: 50%;
+float: left;
+width: 150px;
+height: 300px;
+}
+
+#caja1{
+overflow: hidden;
+}
+
+.naranja{
+background-color: orange;
+width: 50%;
+float: left;
+height: 50px;
+}
