@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header{
+    background-image: url(Foto.png);
+    height: 100vh;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed ;
+}
+
+header h1{
+    margin: 0;
+    color: white;
+    padding: 10px;
+    
+}
+
+#uno{
+    background-color: coral;
+    color: rgb(221, 221, 221);
+    height: 500px;
+    padding: 20px;
+    text-align: justify;
+    line-height: 22px;
+
+    background-image: url(foto2.jpeg);
+    background-size: 100px, cover;
+    background-repeat: repeat-x, no-repeat;
+    background-position: bottom left, center center;
+    background-attachment: scroll, fixed;
+
+}
+
+#grid{
+padding: 10px;
+background-color: brown;
+overflow: hidden;
+}
+
+.hijo{
+    background-color: lightgreen;
+    height: 300px;
+    width: 50%;
+    float: left;
+    text-align: justify;
+    padding: 10px;
+
+}
+
+.hijo:nth-child(2){
+    background-color: lightpink;
+}

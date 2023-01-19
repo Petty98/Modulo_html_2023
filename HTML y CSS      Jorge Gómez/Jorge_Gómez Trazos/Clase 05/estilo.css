@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    /* Font-family: Aplica herencia --> Sus hijos dsi no le dicen lo conytrario adquieren esta regla */
+    font-family: sans-serif;
+}
+
+#fila-cuadrada{
+    background-color: lightblue;
+    border: 3px solid black;
+    padding: 10px;
+    /* Truco para cuando tenga hijos FLOAT */
+    overflow: hidden;
+}
+
+.cuadrado{
+width: 200px;
+height: 200px;
+background-color: lightgreen;
+margin: 20px;
+/* No recomendado */
+float: left;
+}
+
+#fila-aside{
+    background-color: lightpink;
+    padding: 10px;
+    overflow: hidden;
+}
+
+/* Selector hijo */
+
+#fila-aside .contenido{
+    width: 80%;
+    height: 200px;
+    float: left;
+    background-color: lightsteelblue
+}
+
+/* Selector HIJO --> SOLO los aside que sean hijos DIRECTOS de #fila-aside */
+#fila-aside>aside{
+    
+}
+
+/* Selector hijo--> aside DENTRO de #fila-aside */
+#fila-aside aside{
+    width: 20%;
+    height: 200px;
+    float: left;
+    background-color: lightseagreen
+
+}
+
+/* Tanto los elementos con clase .error como los elementos con clase .validate */
+
+.error,
+.validate{
+
+}

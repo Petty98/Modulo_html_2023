@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 20px;
+    margin: 0;
+    padding: 8px;
+}
+
+
+h1{
+    color: rgb(115, 113, 113);
+    padding: 0px;
+}
+
+nav{
+    background-color: rgb(41, 40, 40);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 4px;
+
+}
+
+.nav_item{
+    color: white;
+    text-decoration: none;
+    width: 200px;
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid whitesmoke; 
+
+}
+
+/* .nav_item1{
+    padding-left: 2px;
+} */
+
+/* Cuando pasas por encima con el cursor */
+.nav_item:hover{
+    background-color: white;
+    color: black;
+}
+
+/* .nav_item:visited{
+    color: darkgreen;
+} */
+
+/* Cuando tenemos el enlace clickado */
+.nav_item:active{
+    color: aqua;
+}
+
+header{
+    /* 100% El tamaño del navegador */
+    /* vh: calcula el tamaño de la ventana y calcula su 100% */
+    min-height: 100vh;
+    background-color: lightblue;
+    background-image: url(gorilla-2586193_960_720.jpeg);
+    /* background-position: 0%; */
+    border: 10px dashed white; 
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#primero{
+    min-height: 100vh;
+    background-color: lightpink;
+}
+
+#segundo{
+    min-height: 100vh;
+    background-color: lightsalmon;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(55, 55, 192);
+}
+
+h3>a:visited{
+    color: brown;
+}
