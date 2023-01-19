@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Roboto";
+    overflow: hidden;
+}
+@font-face{
+    font-family: "Roboto";
+    src: url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap);
+}
+
+nav{
+    background-color: rgb(63, 63, 63);
+    color: white;
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    overflow: hidden;
+    /* float: left; */
+}
+
+#columnas{
+    width: 100%;
+    overflow: hidden;
+}
+
+.position{
+    letter-spacing: 3px;
+    /* display: inline-block; */
+    width: 50%;
+    padding-top: 10px;
+    padding-left: 75px;
+    float: left;
+}
+
+#posicionamientos{
+    width: 50%;
+    padding-top: 10px;
+    padding-right: 75px;
+    float: right;
+    text-align: right;
+    /* display: inline; */
+    
+}
+
+.posi{
+    margin-left: 20px;
+    margin-right: 20px;
+}
