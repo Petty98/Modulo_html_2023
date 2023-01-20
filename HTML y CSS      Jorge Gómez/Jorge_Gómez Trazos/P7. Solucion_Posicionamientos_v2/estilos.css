@@ -5,6 +5,7 @@
 body{
     margin: 0;
     font-family: "Roboto";
+    height: 200vh;
     overflow: hidden;
 }
 @font-face{
@@ -30,14 +31,14 @@ nav{
 .position{
     letter-spacing: 3px;
     /* display: inline-block; */
-    width: 50%;
+    width: 30%;
     padding-top: 10px;
     padding-left: 75px;
     float: left;
 }
 
 #posicionamientos{
-    width: 50%;
+    width: 70%;
     padding-top: 10px;
     padding-right: 75px;
     float: right;
@@ -50,3 +51,43 @@ nav{
     margin-left: 20px;
     margin-right: 20px;
 }
+
+
+#fondoBlanco{
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+#cajaExterior{
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.caja{
+    width: 33.33%;
+    /* margin: 2%; */
+    position: relative;
+    float: left;
+    padding: 10px;
+}
+
+.card{
+    background-color: rgb(205, 204, 204);
+    border-radius: 2%;
+    aspect-ratio: 1/1;
+    box-shadow: 2px 2px 2px gray;
+    padding: 4px;
+}
+
+.img1{
+    background-image: url(imgs/buttons.png);
+    height: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}   
