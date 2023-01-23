@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 500vh;
+}
+
+h1, h2{
+    margin: 0;
+}
+
+:root {
+    --main-color: #9d1a1a;
+    --secondary-color: #139128;
+    --grey-ligther: #1d1d20;
+    --padding-standar: 7px;
+}
+
+header{
+    min-height: 100vh;
+    background-color: #c3c3c3;
+    
+}
+
+#uno{
+    padding: 20px;
+    background-color: #29b1df;
+    overflow: hidden;
+}
+
+.columna{
+    width: 33.33%;
+    float: left;
+    padding: 20px;
+    background-color: var(--grey-ligther);
+}
+
+.ficha{
+    background-color: #65e3c0;
+}
+
+.destacado{
+    color: #404040;
+}

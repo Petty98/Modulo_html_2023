@@ -5,8 +5,7 @@
 body{
     margin: 0;
     font-family: "Roboto";
-    height: 200vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 @font-face{
     font-family: "Roboto";
@@ -14,10 +13,14 @@ body{
 }
 
 nav{
-    background-color: rgb(63, 63, 63);
+    background-color: #3f3f3f;
     color: white;
     width: 100%;
     height: 80px;
+
+    position: fixed;
+    z-index: 1000;
+
     padding: 20px;
     overflow: hidden;
     /* float: left; */
@@ -59,21 +62,68 @@ nav{
     overflow: hidden;
 }
 
+#fondoGris {
+    width: 100%;
+    height: 84vh;
+    margin-top: 280px;
+    overflow: hidden;
+    background-color: #e9e9e9;
+}
+
+#fondoGrisOscuro {
+    width: 100%;
+    height: 13vh;
+    overflow: hidden;
+    background-color: #3f3f3f;
+}
+
 #cajaExterior{
     position: relative;
     width: 100%;
     max-width: 1500px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 250px;
     overflow: hidden;
+    padding-top: 182px;
 }
 
 .caja{
     width: 33.33%;
-    /* margin: 2%; */
     position: relative;
     float: left;
     padding: 10px;
+    overflow: hidden;
+}
+
+.caja2{
+    width: 33.33%;
+    position: relative;
+    top: -40px;
+    left: 0px;
+    float: left;
+    padding: 10px;
+    overflow: hidden;
+}
+
+#cajaExterior-2{
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 250px;
+    overflow: hidden;
+    padding-top: 40px;
+}
+
+
+.caja-2{
+    width: 33.33%;
+    position: relative;
+    /* top: -40px; */
+    left: 0px;
+    float: left;
+    padding: 10px;
+    overflow: hidden;
 }
 
 .card{
@@ -81,13 +131,39 @@ nav{
     border-radius: 2%;
     aspect-ratio: 1/1;
     box-shadow: 2px 2px 2px gray;
-    padding: 4px;
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
 }
 
-.img1{
+.img1 {
     background-image: url(imgs/buttons.png);
     height: 50%;
     background-size: 100%;
     background-repeat: no-repeat;
-    
 }   
+
+.img2 {
+    background-image: url(imgs/navs.png );
+    height: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+} 
+
+.img3 {
+    background-image: url(imgs/backdrop.png);
+    height: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.parrafo{
+    width: 100%;
+    margin: 0;
+    line-height: 24px;
+    text-align: center;
+    float: left;
+    font-size: 20px;
+    margin-top: 50px;
+
+}
