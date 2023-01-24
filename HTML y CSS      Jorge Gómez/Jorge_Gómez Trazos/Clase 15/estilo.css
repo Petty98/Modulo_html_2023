@@ -1,0 +1,108 @@
+
+
+/* >>>>IMPORTANTE<<<<
+1. Posicionamientos
+2. Flex -->  Sustituo de FLOAT
+3. Media Quoris */
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+h1, h2{
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#padre{
+    background-color: lightblue;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    
+}
+
+.hijo{
+    /* height: 100px; */
+    width: 33.33%;
+    border: 1px solid black;
+    margin: 4px;
+    background-color: #08aaaa;
+    font-size: 1.2rem;
+}
+
+.icon_notification{
+    /* 3 veces el tamaño de la fuente del body */
+    font-size: 3rem;
+}
+
+#uno{
+    background-color: #d98364;
+    padding: 20px;
+    display: flex;
+
+    /* Cuando no quepan, los llevan a una segunda línea */
+    flex-wrap: wrap;
+
+    /* Dirección principal */
+    flex-direction: row; 
+
+    /* Comportamiento en la dirección principal */
+    justify-content: center;
+
+    /* Comportamiento en la dirección secundaria */
+    align-items: center;
+}
+
+.uno_hijo{
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+    border: 1px solid black;
+}
+
+#dos{
+    height: 500px;
+    background-color: #d98364;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    /* Comportamiento en la dirección principal "COLUMN" */
+    justify-content: center;
+
+     /* Comportamiento en la dirección secundaria "ROW"*/
+     align-items: center;
+}
+
+.dos_hijo{
+    height: 50px;
+    width: 50px;
+    background-color: grey;
+    border: 1px solid black;
+}
+
+@media (min-width: 400px) and (max-width: 570px){
+    #padre{
+        flex-wrap: wrap;
+    }
+
+    .hijo{
+        width: 100%;
+    }
+}
+
+@media (max-width: 570px){
+    .hijo{
+        font-size: 1rem;
+    }
+}
+   
