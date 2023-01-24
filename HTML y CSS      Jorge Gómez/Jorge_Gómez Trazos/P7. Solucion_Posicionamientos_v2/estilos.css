@@ -5,7 +5,6 @@
 body{
     margin: 0;
     font-family: "Roboto";
-    /* overflow: hidden; */
 }
 @font-face{
     font-family: "Roboto";
@@ -23,7 +22,6 @@ nav{
 
     padding: 20px;
     overflow: hidden;
-    /* float: left; */
 }
 
 #columnas{
@@ -33,7 +31,6 @@ nav{
 
 .position{
     letter-spacing: 3px;
-    /* display: inline-block; */
     width: 30%;
     padding-top: 22px;
     padding-left: 75px;
@@ -44,12 +41,10 @@ nav{
 #posicionamientos{
     width: 70%;
     padding-top: 22px;
-    padding-right: 75px;
+    padding-right: 140px;
     float: right;
     text-align: right;
-    font-size: 20px;
-    /* display: inline; */
-    
+    font-size: 20px;    
 }
 
 .posi{
@@ -60,14 +55,14 @@ nav{
 
 #fondoBlanco{
     width: 100%;
-    height: 80vh;
+    /* height: 80vh; */
     overflow: hidden;
 }
 
 #fondoGris {
     width: 100%;
     height: 84vh;
-    margin-top: 280px;
+    margin-top: 220px;
     overflow: hidden;
     background-color: #e9e9e9;
 }
@@ -86,7 +81,8 @@ nav{
     margin: auto;
     margin-top: 250px;
     overflow: hidden;
-    padding-top: 182px;
+    padding: 111px;
+    padding-top: 88px;
 }
 
 .caja{
@@ -111,28 +107,27 @@ nav{
     position: relative;
     width: 100%;
     max-width: 1500px;
+    height: 645px;
     margin: auto;
-    margin-top: 250px;
-    overflow: hidden;
+    margin-top: 135px;
+    /* overflow: hidden; */
     padding-top: 40px;
+    padding-right: 75px;
 }
-
 
 .caja-2{
     width: 33.33%;
     position: relative;
-    /* top: -40px; */
-    left: 0px;
     float: left;
-    padding: 10px;
-    overflow: hidden;
+    padding: 60px;
+    /* overflow: hidden; */
 }
 
 .card{
-    background-color: rgb(205, 204, 204);
+    background-color: rgb(209 209 209);
     border-radius: 2%;
     aspect-ratio: 1/1;
-    box-shadow: 2px 2px 2px gray;
+    box-shadow: -5px 4px 2px gray;
     padding: 5px;
     overflow: hidden;
     position: relative;
@@ -160,35 +155,88 @@ nav{
 }
 
 .parrafo{
-    width: 100%;
-    margin: 0;
-    line-height: 24px;
+    /* width: 100%;
+    margin: 0; */
+    line-height: 23px;
     text-align: center;
     float: left;
-    font-size: 20px;
-    margin-top: 50px;
-
+    font-size: 17px;
+    margin-top: 34px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
+.parrafo2{
+    /* width: 100%;
+    margin: 0; */
+    line-height: 21px;
+    text-align: center;
+    float: left;
+    font-size: 15px;
+    margin-top: 31px;
+    padding-right: 17px;
+    padding-left: 17px;
+}
 
 .caja-2-1{
-    /* width: 33.33%; */
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 30px;
+    left: 30px;
+    bottom: -30px;
+    right: -30px;
     float: left;
-    padding: 10px;
+    padding: 60px;
     overflow: hidden;
+    z-index: 1000;
 }
 
-/* .card-1{
-    background-color: rgb(205, 204, 204);
-    border-radius: 2%;
-    aspect-ratio: 1/1;
-    box-shadow: 2px 2px 2px gray;
-    padding: 5px;
-    overflow: hidden;
+.caja-2-2{
     position: absolute;
-    top: 10px;
-    left: 10px;
-} */
+    top: 30px;
+    left: 30px;
+    bottom: -30px;
+    right: -30px;
+    float: left;
+    padding: 60px;
+    /* overflow: hidden; */
+    z-index: 1000;
+}
+
+.interrogacion{
+    width: 90px;
+    height: 90px;
+    border-radius: 1000%;
+    background: linear-gradient(0deg, rgba(70,15,149,1) 31%, rgba(90,30,179,1) 60%, rgba(148,99,223,1) 100%);
+    box-shadow: 2px 1px 2px rgba(44, 44, 44, 0.694);
+
+    position: fixed;
+    right: 20px;
+    top: 43px;
+}
+
+.interrogacion>h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 22px;
+}
+
+.plus{
+    width: 70px;
+    height: 70px;
+    border-radius: 1000%;
+    background-color: rgb(86, 31, 162);
+    box-shadow: 2px 1px 2px rgba(44, 44, 44, 0.694);
+
+    position: fixed;
+    right: 26px;
+    top: 875px;
+}
+
+.plus>h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    margin-top: 11px;
+}
