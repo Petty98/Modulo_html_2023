@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-family: serif;
+    font-style: normal;
+    font-weight: lighter;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-bottom: 1px solid black;
+}
+
+h2{
+    margin: 0px;
+    padding: 10px;
+    font-weight: lighter;
+    background-color: #CCCC88;
+    
+}
+
+h4{
+margin: 0px;
+margin-top: 3px;
+font-weight: lighter;
+background-color: #CCCC88;
+vertical-align: middle;
+
+}
+
+a{
+text-decoration: none;
+background-color: none;
+color: #0645ad;
+}
+
+.encabezado{
+    padding: 5px;
+}
+
+#contenedorPadre{
+    overflow: hidden;
+    min-width: 660px;
+}
+
+.w20{
+    padding: 8px;
+    float: left;
+    width: calc(100% - 286px) ; 
+    line-height: 20px;
+}
+
+.p1{
+    margin-top: 0px;
+}
+
+.p3{
+    margin-bottom: 0px;
+}
+
+/* .p1*/ .p2, .p3{ 
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.w30{
+    float: right;
+    overflow: hidden;
+    width: 12%;
+    min-width: 280px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.imagenJordan img{ 
+    width: 100%;
+    padding-top: 4px;
+    padding-bottom: 2px;
+}
+
+.w40{
+    margin-top: -2px;
+    margin-bottom: 4px;
+    font-weight: lighter; 
+    font-size: 0.65em;
+}
+
+.DatosPersonales{
+    margin: 0px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    background-color: #CCCC88;
+    font-weight: bold;
+    font-size: 80%;
+    padding: 2px;
+}
+
+.columnas{
+font-size: 75%;
+text-align: left;
+overflow: hidden;
+line-height: 18px;
+}
+
+.x10{
+float: left;
+width: 50%;
+text-align: left;
+font-weight: bolder;
+}
+
+.x20{
+float: left;
+width: 50%;
+font-weight: lighter;
+}
+
+.x20 img{
+margin: auto;
+width: 16%;
+margin-bottom: -5px;
+}
+
+.lista{
+border: 1px solid black;
+background-color: #f8f9fa;
+float: left;
+padding: 0px;
+margin-left: 8px;
+marks: none;
+line-height: 25px;
+}
+
+ol>li::marker {
+content: '';
+}
+
+.primer-nivel{
+padding: 5px;
+margin: auto;
+marks: none;    
+}
+
+.indice{
+text-align: center;
+font-size: 16px;
+margin-top: 4px;
+margin-bottom: 2px;
+background-color: none;
+/* margin: 0px; */
+padding: 5px;
+padding-bottom: 0px;
+font-weight: 100;
+text-decoration: none;
+}
+
+.carreraDeportiva, .trayectoria, .medallero, .titulos{
+margin: 0px;
+margin-bottom: 3px;
+margin-top: 3px;
+font-weight: lighter;
+text-align: center;
+background-color: #CCCC88;
+/* font-weight: bold;*/
+font-size: 80%;
+padding: 2px;
+}
+
+.carreraDeportiva, .trayectoria{
+font-weight: bold;
+}
+
+h4 img{
+/* margin: 3px; */
+margin-top: 4px;
+width: 30px;
+margin-bottom: 2px;    
+}
+
+.clubProfesional, .seleccionNacional{
+margin: 0px;
+margin-bottom: 3px;
+margin-top: 3px;
+/* font-weight: lighter; */
+text-align: center;
+background-color: #FAF0E6;
+font-weight: bold;
+font-size: 80%;
+padding: 2px;
+}
+
+.olimpiadas{
+vertical-align: middle;
+}
+
+.lista2{
+font-size: 75%;
+text-align: left;
+overflow: hidden;
+line-height: 18px;
+margin-left: -10px;
+line-height: 0px;
+}
+
+.medallero{
+overflow: hidden;
+/* vertical-align: middle; */
+}
+
+.medallero>.mostrar{
+text-align: right;
+font-size: 12px;
+float: right;
+/* vertical-align: middle; */
+}
+
+.titulos>.mostrar{
+text-align: right;
+font-size: 12px;
+float: right;
+}
+
+.resaltado{
+font-weight: bold;
+}
+
+.resaltado2{
+font-weight: bold;
+font-size: 18px;
+}
+
+.resaltado3{
+font-weight: bold;
+font-size: 13px;
+}
