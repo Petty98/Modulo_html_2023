@@ -281,7 +281,7 @@ height: 387px;
     font-size: 15px;
     font-family: "Roboto";
     color: #66615b;
-    margin-top: 75px;
+    margin-top: 65px;
     line-height: 19px;
 }
 
@@ -372,25 +372,84 @@ height: 387px;
 
 .preciosColumnas{
     width: 100%;
+    max-width: 1200px;
+    margin: auto;
     display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .cclumna{
-    width: 25%;
+    width: 20%;
+    /* border: 1px solid black; */
+    border-radius: 12px;
+    /* box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px -1px; */
+    box-shadow: 0 6px 10px -4px rgb(0 0 0 / 15%);
+    overflow: hidden;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .cclumna>.h1{
     font-family: "Dosis";
+    width: 100%;
+    text-align: center;
+    background-color: #F5FAFD;
+    padding: 15px;
 }
 
-
 .h2{
-
+    font-family: "Dosis";
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    font-size: 38px;
 }
 
 .destacado > h2{
    
 }
+
+.h3,.h4,.h5,.h6{
+    font-family: "Roboto";
+    width: 100%;
+    text-align: center;
+    color: #6c757d;
+    background-color: #F5FAFD;
+    padding: 15px;
+
+}
+
+.h7{
+    font-family: "Roboto";
+    color: #a3a5a8;
+    padding: 15px;
+}
+
+.h8{
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    margin: 14px;
+    margin-top: 0;
+    white-space: nowrap;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px 20px 20px 20px;
+    padding: 12px;
+}
+
+
 
 
 @media (max-width:990px) {
