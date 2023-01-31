@@ -154,6 +154,30 @@ height: 387px;
     align-items: center;
 }
 
+.startExploring{
+    font-family: "Roboto";
+    font-size: 12px;
+    color: white;
+    font-weight: 500;
+    border: solid 2px white;
+    border-radius: 20px 20px 20px 20px;
+    width: 142px;
+    padding: 10px;
+    letter-spacing: 0.7 px;
+    white-space: nowrap;
+    margin-top: 38px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.startExploring:hover{
+    background-color: white;
+    color: #66615b;
+    font-weight: 500;
+}
+
+
 .custom-iconx.material-symbols-outlined{
     font-size: 20px;
 }
@@ -197,10 +221,8 @@ height: 387px;
     font-family: "Dosis" ;
     font-size: 22px;
     font-weight: 500;
-    padding-bottom: 10px;
-
-    
     padding-bottom: 25px;
+    
 }
 
 .texto2{
@@ -212,6 +234,7 @@ height: 387px;
 
 .w10{
     width: 25%;
+    margin-top: -30px;
 }
 
 .w20{
@@ -341,6 +364,9 @@ height: 387px;
     font-weight: 500;
     color: #111111;
     margin-bottom: 40px;
+
+    display: flex;
+    justify-content: center;
 }
 
 .teext2{
@@ -360,7 +386,7 @@ height: 387px;
 #quintoElemento{
     width: 100%;
     padding-top: 100px;
-    padding-bottom: 125px;
+    padding-bottom: 95px;
     display: flex;
 
     flex-direction: column;
@@ -386,9 +412,9 @@ height: 387px;
 
 .cclumna{
     width: 20%;
+    background-color: #F5FAFD;
     /* border: 1px solid black; */
     border-radius: 12px;
-    /* box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px -1px; */
     box-shadow: 0 6px 10px -4px rgb(0 0 0 / 15%);
     overflow: hidden;
     margin-left: 10px;
@@ -402,54 +428,171 @@ height: 387px;
     align-items: center;
 }
 
+.cclumna:hover{
+    position: relative;
+    top: -20px;
+    box-shadow: rgb(0 0 0 / 10%) 1px 13px 10px 2px;
+
+}
+
+
 .cclumna>.h1{
     font-family: "Dosis";
+    font-size: 18px;
     width: 100%;
     text-align: center;
-    background-color: #F5FAFD;
-    padding: 15px;
+    padding: 20px;
 }
 
 .h2{
     font-family: "Dosis";
     width: 100%;
     text-align: center;
-    padding: 15px;
+    background-color: #ffffff;
+    padding: 34px;
     font-size: 38px;
 }
 
-.destacado > h2{
-   
+.destacado > .h2{
+    background: linear-gradient(270deg, #f7395f 0%, #fe702e 100%);
+    color: white;
 }
+
+.destacado > .h8{
+    background: linear-gradient(270deg, #f7395f 0%, #fe702e 100%);
+    color: white;
+    border: none;
+    padding: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 
 .h3,.h4,.h5,.h6{
     font-family: "Roboto";
-    width: 100%;
+    white-space: nowrap;
+    font-size: 14px;
+    width: 85%;
     text-align: center;
     color: #6c757d;
-    background-color: #F5FAFD;
     padding: 15px;
+    border-bottom: 1px dotted #dddddd;
+
+    display: flex;
+    justify-content: center;
 
 }
 
 .h7{
     font-family: "Roboto";
+    width: 100%;
     color: #a3a5a8;
+    font-size: 14px;
+    margin-top: 45px;
     padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .h8{
     letter-spacing: 1px;
-    color: rgb(0, 0, 0);
+    color: #66615b;
+    font-size: 12px;
     margin: 14px;
     margin-top: 0;
+    margin-bottom: 65px;
     white-space: nowrap;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid #6d6d6d;
     border-radius: 20px 20px 20px 20px;
-    padding: 12px;
+    padding: 13px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h8:hover{
+    background-color: #66615b;
+    color: rgb(240, 240, 240);
+}
+
+.cajaBlanco2{
+    width: 85%;
+    border-bottom: solid 1.8px #f1eae0;
+    margin-top: 100px;
 }
 
 
+.bloques3{
+    max-width: 1200px;
+    margin: auto;
+    gap: 35px;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.card{
+    padding: 2rem;
+    background-color: #F5FAFD;
+    border-radius: 12px;
+    box-shadow: rgb(0 0 0 / 15%) 0px 6px 10px -4px;
+}
+
+.uno{
+    height: 50%;
+    font-family: "Roboto";
+    font-size: 15px;
+    color: #66615b;
+    /* margin-bottom: 5px; */
+}
+
+.dos{
+    height: 45%;
+    gap: 35px;
+    display: flex;
+
+    margin: 20px 0px;
+    flex-direction: row;
+}
+
+.foto{
+    width: 35%;
+    border-radius: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.foto>img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.drcha{
+    width: 60%;
+}
+
+.si{
+    font-family: "Dosis";
+    font-size: 18px;
+    color: #111111;
+}
+
+.no{
+    font-family: "Roboto";
+    font-size: 15px;
+    color: #6c757d;
+}
 
 
 @media (max-width:990px) {
