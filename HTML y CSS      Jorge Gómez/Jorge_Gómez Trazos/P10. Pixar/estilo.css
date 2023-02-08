@@ -23,6 +23,19 @@ body{
     
 }
 
+@font-face {
+    font-family: 'Brandon Grotesque Black';
+    src: url(fonts/BrandonGrotesque-Black.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque Medium';
+    src: url(fonts/BrandonGrotesque-Medium.ttf);
+    font-weight: 500;
+}
+
+
 * {
 box-sizing: border-box;
 }
@@ -44,8 +57,8 @@ nav{
     height: 105px;
     padding-top: 38px;
     padding-bottom: 38px;
-    padding-left: 180px;
-    padding-right: 165px;
+    padding-left: 120px;
+    padding-right: 160px;
 
     display: flex;
     flex-direction: row;
@@ -64,31 +77,37 @@ nav{
 .pixar>img{
     width: 100%;
     height: 100%;
+    min-width: 144.09px;
 }
 
-.menu{
+.menuOrdenador{
     width: 70%;
     height: 100%;
-
+    
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
 
+.menuMovil{
+    display: none;
+    width: 70%;
+}
+
 .menu-style{
     margin: 0 15px;
-    font-family: 'Brandon Regular';
-    /* font-weight: 500; */
+    font-family: 'Brandon Grotesque Medium';
     font-size: 15px;
     letter-spacing: 0.14em;
+    white-space: nowrap;
     cursor: pointer;
     color: #1d1d1d;
     text-decoration: none;
     background: none;
     position: relative;
 }
-.menu-container{
 
+.menu-container{
     position: absolute;
     top: 100%;
     display: none;
@@ -122,6 +141,9 @@ nav{
     color: white;
 }
 
+.gris:hover, .enlace:hover{
+    color: rgb(183, 183, 183);
+}
 
 
 .caja1{
@@ -146,7 +168,7 @@ nav{
 .caja{
     width: 100%;
     height: 100%;
-    padding: 250px 100px;
+    padding: 181px 100px;
 }
 
 #lightyear-logo{
@@ -158,8 +180,9 @@ nav{
 
 .caja2{
     width: 100%;
-    min-height: 800px;
-    padding: 190px 142px;
+    /* min-height: 800px; */
+    /* padding: 190px 142px; */
+    padding: 10% 4%;
 }
 
 .caja2-posicion{
@@ -179,12 +202,13 @@ nav{
     font-family: "Brandon Bold";
     font-size: 14px;
     font-weight: 600;
+    margin-bottom: 17px;
 
 }
 
 
 .imagen{
-    padding: 0px 17px 17px;
+    padding: 0px 18px 0px;
 }
 
 .imagen img{
@@ -194,7 +218,13 @@ nav{
 .caja3 {
     width: 100%;
     min-height: 270px;
-    padding: 0px 140px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
 }
   
 .contacto {
@@ -248,15 +278,19 @@ nav{
 .politica-texto {
     text-align: center;
     font-size: 14px;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
 }
 
 .politica-style {
     cursor: pointer;
     color: #1d1d1d;
     background: none;
+    white-space: nowrap;
     letter-spacing: 4px;
     padding-bottom: 10px;
-    
 }
 
 .politica-style:hover {
@@ -304,4 +338,65 @@ nav{
 .caja4{
     width: 100%;
     height: 40px;
+}
+
+@media (max-width:640px) {
+    
+    .caja2-posicion{
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: nowrap;
+    }
+
+}
+
+@media (max-width:1390px){
+
+    .menuMovil{
+        display: flex;
+
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 100000000000000000000;
+    }
+
+    .menuOrdenador{
+        display: none;
+    }
+
+    nav{
+        background-color: white;
+        position: fixed;
+        top: 0;
+        z-index: 100000000;
+    }
+
+}
+
+.gg-menu {
+    transform: scale(var(--ggs,1))
+}
+.gg-menu,
+.gg-menu::after,
+.gg-menu::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background: currentColor
+}
+.gg-menu::after,
+.gg-menu::before {
+    content: "";
+    position: absolute;
+    top: -6px
+}
+.gg-menu::after {
+    top: 6px
 }
