@@ -85,11 +85,44 @@ nav{
     color: #1d1d1d;
     text-decoration: none;
     background: none;
+    position: relative;
+}
+.menu-container{
+
+    position: absolute;
+    top: 100%;
+    display: none;
+    padding-top: 10px;
+    left: -13px;
+    z-index: 1000000;
+
+}
+.pequeMenu{
+    background-color: #1d1d1d;
+    color: white;
+    padding: 15px;
+    font-family: 'Brandon Regular';
+    font-size: 15px;
+    white-space: nowrap;
+    line-height: 25px;
+
+}
+
+.si:hover>.menu-container{
+    display: block;
+    z-index: 100000000;
 }
 
 .menu-style:hover{
     color: rgba(29, 29, 29, 0.4);
 }
+
+.enlace{
+    text-decoration: none;
+    color: white;
+}
+
+
 
 .caja1{
     max-height: 700px;
