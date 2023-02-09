@@ -1,0 +1,58 @@
+/* 
+
+Formularios:
+
+    Pseudoelementos
+    ::after ::before
+
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+h1, h2{
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+form{
+    border: 1px solid black;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.caja2{
+    /* Para que me haga caso: display: inline-block */
+    display: inline-block;
+    margin-top: 10px;
+}
+
+input.form-control{
+    display: block;
+    width: 40%;
+}
+
+.boton{
+    margin-top: 10px;
+}
+
+textarea.form-control{
+    resize: none;
+    width: 100%;
+}

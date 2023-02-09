@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+<h1>Formularios</h1>
+
+<div>
+    <!-- Veremos más adelante el "sendEmail.php" -->
+    <!-- Para que este formulario se envíe, todos los inputs tienen que ir con la etiqueta (name="ejemplo") -->
+    <!-- La etiqueta (for=ejemplo) del "label", va linkado con el (id=ejemplo) del input -->
+
+    <form action="sendEmail.php"> 
+        <label for="Nombre">Nombre</label>
+        <input class="form-control" type="text" name="Nombre" id="Nombre">
+
+        <label class="caja2" for="Apellidos">Apellidos</label>
+        <input class="form-control" type="text" name="Apellidos" id="Apellidos">
+
+        
+        <label class="caja2" for="edad">Edad</label>
+        <input 
+        min="18"
+        max="100"
+        class="form-control"
+        name="edad"
+        type="number"
+        id="edad">
+        
+        <label class="caja2" for="email">Email</label>
+        <input class="form-control" type="email" name="email" id="email">
+        
+        <label class="caja2" for="pass">Password</label>
+        <input class="form-control" type="password" id="pass" name="pass">
+        
+        <label class="caja2" for="select ">Select</label>
+        <select class="form-control" name="select" id="select">
+            <option value="1">Audi</option>
+            <option value="2">Mercedes</option>
+            <option value="3">BMW</option>
+            <option value="4">Tesla</option>
+        </select>
+        
+        <label class="caja2" for="consulta">Consulta</label>
+        <textarea class="form-control" name="consulta" id="consulta" cols="30" rows="10"></textarea>
+        
+        <!-- Botón de enviar -->
+        <input class="boton" type="submit" value="Enviar">
+    </form>
+
+</div>
+
+</body>
+</html>
