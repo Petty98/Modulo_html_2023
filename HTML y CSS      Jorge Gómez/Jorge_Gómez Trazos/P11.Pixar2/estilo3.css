@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(32, 31, 31);
+}
+
+@font-face {
+    font-family: "Futura Light";
+    src: url(Futura\ Light\ font.ttf);
+}
+
+@font-face {
+    font-family: "Futura";
+    src: url(futur.ttf);
+}
+
+.caja2{
+    /* width: 100%;
+    min-height: 800px;
+    padding: 350px 142px; */
+
+    background-image: url(as.png);
+    filter:  brightness(0.38) blur(8px);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caja2-posicion{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.card{
+    /* margin-top: 40px; */
+    width: 15%;
+    /* transform: translate(42px , -12px); */
+    position: relative;
+    top: -5px;
+    left: -20px;
+}
+
+.card-text{
+    width: 100%;
+    height: 100%;
+    margin:auto;
+    padding: 25px;
+    padding-top: 140px;
+    text-align: center;
+    background-color: #272727;
+    BORDER-RADIUS: 2%;
+    transform: translate(42px , -12px);
+    box-shadow: 2px 7px 18px 20px rgb(255 255 255 / 17%);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition-duration: 0.6s;
+    aspect-ratio: 331∶484;
+}
+
+.card-text>p{
+    margin: 0;
+    font-family: "Futura";
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    color: #e7e7e7;
+
+}
+
+.imagen{
+    /* padding: 0px 17px 17px; */
+    text-align: center;
+    align-items: center;
+    transition-duration: 0.6s;
+    line-height: 0;
+}
+
+.imagen img{
+    width: 100%;
+    text-align: center;
+    box-shadow: 2px 7px 18px 20px rgb(255 255 255 / 17%);
+    BORDER-RADIUS: 2%;
+    line-height: 0;
+} 
+
+.cajaDetras{
+    display: none;
+}
+
+.imagen2{
+    width: 15%;
+    position: absolute;
+    top: 884px;
+    left: 891px;
+    box-shadow: 2px 1px 17px 6px rgb(0 0 0 / 81%);
+}
+
+.card:hover>.imagen{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+
+.card:hover .card-text{
+    transform: rotateY(0deg);
+}
