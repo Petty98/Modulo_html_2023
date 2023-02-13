@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+h1{
+    margin: 0;
+    margin-top: 40px;
+}
+
+.grid-container{
+
+    display: grid;
+
+    /* Se puede poner de las siguientes formas: */
+    /* grid-template-columns: 33.33% 33.33% 33.33% */
+    /* grid-template-rowa: 150px auto 150px */
+
+
+    grid-template-columns: 1fr 2fr 1fr;
+
+    grid-template-rows: 100px 200px 100px;
+
+    gap: 2px;
+
+}
+
+.grid-container2{
+
+    padding-left: 300px;
+    padding-right: 300px;
+
+    margin-top: 100px;
+    display: grid;
+    gap: 2px;
+
+
+    /* Se puede poner de las siguientes maneras: */
+
+    /* grid-template-columns: 100px 100px 100px 100px 100px 100px */
+    /* gris-template-columns: repeat (6, 100px) */
+    grid-template-columns: repeat(7 , 1fr);
+
+}
+
+
+.item-container{
+    background-color: lightgrey;
+    margin: 3px;
+}
+
+.grid-container2>.item-container{
+    height: 100px;
+}
+
+
+/* Para elegir desde que columna empieza */
+
+.item-container-start{
+
+    grid-column-start: 6;
+    grid-column-end: 7;
+    /* grid-row-start: 1;
+    grid-row-end: ; */
+
+}
+
+.color{
+    background-color: rgb(210 186 186);
+}
