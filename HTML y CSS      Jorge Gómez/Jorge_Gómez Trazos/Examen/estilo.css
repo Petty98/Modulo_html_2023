@@ -149,7 +149,12 @@ body{
 }
 
 .negro{
-    width: 4%;
+    width: 3%;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.negro2{
+    width: 9%;
     border-bottom: 1px solid rgb(0, 0, 0);
 }
 
@@ -185,15 +190,17 @@ body{
 
 .imgg2{
     /* width: 45%; */
-    height: 100%
+    height: 100%;
+    line-height: 0;
+    position: relative;
 }
 
 .imgUp{
-    width: 100%;
+    width: 101%;
 }
 
 .imgDown{
-    width: 100%;
+    width: 101%;
 }
 
 .cajaFondo4{
@@ -231,6 +238,13 @@ body{
     align-items: center;
 }
 
+.espacioXIII{
+    width: 110%;
+    gap: 497px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
 
 .cajaFondo5{
     width: 100%;
@@ -252,18 +266,100 @@ body{
     flex-direction: row;
 }
 
+.espacioXII{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.blanco{
+    width: 12%;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin-top: 120px;
+}
+
+.blanco2{
+    width: 12%;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin-top: 35px;
+}
+
 .izq{
     width: 45%;
     background-image: url(img/dish-1-570x690.jpeg);
     background-repeat: no-repeat;
     background-size: cover; 
+    color: white;
+    font-family: "Garamond";
+    padding: 50px;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-content: center;
+    flex-wrap: nowrap;
+    transition: 0.5s;
 }
 
 .drcha{
     width: 45%;
-    background-image: url(img/dish-2-570x690.jpeg);
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url(img/dish-2-570x690.jpeg);
     background-repeat: no-repeat;
     background-size: cover; 
+
+    color: white;
+    font-family: "Garamond";
+    padding: 50px;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-content: center;
+    flex-wrap: nowrap;
+    transition: 0.5s;
+}
+
+.drcha:hover{
+    /* filter: brightness(60%); */
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.32) 100%), url(img/dish-2-570x690.jpeg);
+
+}
+
+.izq:hover{
+    /* filter: brightness(60%); */
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.32) 100%), url(img/dish-1-570x690.jpeg);
+
+}
+
+
+.estilo1{
+    font-size: 80px;
+    margin-top: 30px;
+}
+
+.estilo2{
+    font-size: 40px;
+}
+
+.estilo3{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.estilo4{
+    font-size: 30px;
+    margin-top: 82px;
+}
+
+.estilo5{
+    font-size: 30px;
+    margin-top: 30px;
+    line-height: 37px;
 }
 
 .cajaFondo6{
@@ -299,7 +395,7 @@ body{
 .back2{
     width: 60%;
     margin: auto;
-    gap: 30px;
+    gap: 60px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -321,7 +417,14 @@ body{
 }
 
 .fila2{
-    margin-bottom: 30px;
+    margin-top: 24px;
+    margin-bottom: 52px;
+}
+
+.flexeo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .lineaX{
@@ -344,6 +447,7 @@ body{
 
 .back3{
     width: 100%;
+    margin-bottom: 150px;
     display: flex;
     justify-content: center;
 }
@@ -351,7 +455,7 @@ body{
 .white-boxX{
     font-family: "Garamond";
     font-size: 20px;
-    width: 18%;
+    width: 14%;
     margin-top: 45px;
     margin-bottom: 40px;
     padding: 18px;
@@ -361,9 +465,38 @@ body{
     background-color: transparent;
     color: black;
     white-space: nowrap;
+    transition: 0.5s;
 }
 
 .white-boxX:hover{
-    width: 22%;
-    transition: 0.5s;
+    width: 17%;
+}
+
+
+.imgUp2{
+    width: 101%;
+}
+
+.imgDown2{
+    width: 100%;
+}
+
+.circulo{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 50px;
+    gap: 79px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.textIzq{
+    color: white;
+    text-align: center;
 }

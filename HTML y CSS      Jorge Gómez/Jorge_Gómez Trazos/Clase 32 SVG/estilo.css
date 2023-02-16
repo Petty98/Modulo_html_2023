@@ -1,0 +1,38 @@
+
+
+/* 
+
+    SVG
+
+    View Box
+
+*/
+
+
+
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+svg{
+    border: 1px solid red;
+    height: 400px;
+}
+
+.rectangulo{
+    fill: purple;
+}
+
+.rectangulo:hover{
+    fill: pink;
+}
