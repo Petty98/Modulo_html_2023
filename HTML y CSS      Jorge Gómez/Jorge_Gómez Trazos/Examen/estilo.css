@@ -128,6 +128,7 @@ body{
 
 .linea{
     font-family: "Garamond";
+    align-items: justify;
 
 }
 
@@ -140,13 +141,13 @@ body{
     color: #90909B;
     font-size: 30px;
     margin-top: 30px;
-    text-align: center;
+    align-items: justify;
 
 }
 
 .espacioX{
     width: 100%;
-    margin-top: 140px;
+    margin-top: 190px;
     margin-bottom: 65px;
 
     display: flex;
@@ -170,10 +171,12 @@ body{
 .caja3{
     max-width: 1200px;
     margin: auto;
-    margin-bottom: 188px;
+    margin-bottom: 90px;
+    padding: 20px;
     position: relative;
     gap: 25px;
     display: flex;
+
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
@@ -201,7 +204,7 @@ body{
     width: 50%;
 }
 
-.imgg2>img{
+.fotele{
     width: 100%;
 }
 
@@ -239,11 +242,13 @@ body{
 }
 
 .columnaUno{
-    width: 45%;
+    /* width: 500px; */
+    min-width: 500px;
 }
 
 .columnaDos{
-    width: 45%;
+    /* width: 500px; */
+    min-width: 500px;
 }
 
 .espacioXI{
@@ -271,15 +276,14 @@ body{
     width: 100%;
     margin: auto;
     margin-bottom: 85px;
-    height: 58vh;
 
     display: flex;
     justify-content: center;
 }
 
 .caja4{
-    width: 60%;
-    height: 92%;
+    max-width: 1200px;
+    /* height: 66vh; */
 
     gap: 30px;
     display: flex;
@@ -297,7 +301,7 @@ body{
 .blanco{
     width: 12%;
     border-bottom: 1px solid rgb(255, 255, 255);
-    margin-top: 120px;
+    /* margin-top: 120px; */
 }
 
 .blanco2{
@@ -319,7 +323,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-content: center;
     flex-wrap: nowrap;
     transition: 0.5s;
@@ -339,7 +343,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-content: center;
     flex-wrap: nowrap;
     transition: 0.5s;
@@ -374,7 +378,7 @@ body{
 
 .estilo4{
     font-size: 30px;
-    margin-top: 82px;
+    margin-top: 70px;
 }
 
 .estilo5{
@@ -419,7 +423,6 @@ body{
     gap: 60px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     flex-direction: row;
 }
 
@@ -440,6 +443,9 @@ body{
 .fila2{
     margin-top: 24px;
     margin-bottom: 52px;
+    gap: 20px;
+    display: flex;
+
 }
 
 .flexeo{
@@ -476,7 +482,6 @@ body{
 .white-boxX{
     font-family: "Garamond";
     font-size: 20px;
-    width: 14%;
     margin-top: 45px;
     margin-bottom: 40px;
     padding: 18px;
@@ -490,7 +495,8 @@ body{
 }
 
 .white-boxX:hover{
-    width: 17%;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 
@@ -519,6 +525,7 @@ body{
     flex-direction: column;
     align-items: center;
 }
+
 
 .relative{
     position: relative;
@@ -609,6 +616,7 @@ body{
 
 .booox{
     width: 100%;
+    margin-top: 75px;
     gap: 20px;
     display: flex;
     justify-content: center;
@@ -623,9 +631,9 @@ body{
     height: 62px;
 }
 
-.nombre, .phone{
-    width: 25%;
-}
+/* .nombre, .phone{
+    width: 200px;
+} */
 
 #tress{
     width: 100%;
@@ -634,13 +642,26 @@ body{
     display: flex;
     gap: 15px;
     align-items: center;
-    flex-direction: row;
-    align-content: flex-start;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
-.date, .guests, time{
-    width: auto;
+.estiloWidth{
+    width: 441px;
+}
+
+.date {
+    width: 200px;
+
+} 
+
+.guests {
+    width: 75px;
+}
+
+
+time {
+    width: 135px;
 }
 
 .estilou{
@@ -714,6 +735,7 @@ body{
 
 .texto6{
     color: #606071;
+    text-align: center;
 }
 
 .margin{
@@ -740,6 +762,23 @@ body{
     align-items: flex-end;
 }
 
+.fiiinal{
+    text-align: center;
+}
+
+@media (max-width: 1210px){
+
+    .caja3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgge2{
+        min-width: 570px;
+    }
+
+}
 
 @media (max-width:1200px) {
     
@@ -751,8 +790,88 @@ body{
         margin-top: 40px;
     }
     
-    .caja3{
+    /* .caja3{
 
+    } */
+
+    .caja4{
+        max-width: 1070px;
+    }
+}
+
+
+@media (max-width: 1119px){
+    
+    .dosCajas{
+        flex-direction: column;
+    }
+
+    .columnaUno{
+        min-width: 100%;
+    }
+
+    .columnaDos{
+        min-width: 100%;
+    }
+
+}
+
+
+@media (max-width: 896px) {
+    
+    .caja4{
+        display: flex;
+
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .izq{
+        width: 90%;
+        display: flex;
+        align-items: center;
+    }
+
+    .drcha{
+        width: 90%;
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+
+@media (max-width: 784px) {
+    
+    .caja4{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .back2{
+        width: 100%;
+        gap: 0px; 
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fila2{
+        margin-top: 24px;
+        margin-bottom: 52px;
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map{
+        width: 100%;
+        margin: 20px;
     }
 
 }
@@ -761,6 +880,12 @@ body{
     
     .texto2{
         text-align: center;
+    }
+
+    .cajaFondo2{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 120px;
     }
     
 
@@ -772,4 +897,24 @@ body{
         text-align: center;
     }
 
+    .caja3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    }
+
 }
+
+
+@media (max-width: 821px){
+    
+    .dosCajas{
+        flex-direction: column;
+
+}
+
+}
+
