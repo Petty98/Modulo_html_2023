@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 30px;
+}
+
+.color-red{
+    color: rgb(144, 0, 255);
+}
+
+.grid{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    gap: 10px 10px;
+}
+
+.cuadrado{
+    height: 100px;
+    width: 100px;
+    background-color: lightgreen;
+}
+
+.rotar{
+    animation-name: rotacion;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotacion{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
