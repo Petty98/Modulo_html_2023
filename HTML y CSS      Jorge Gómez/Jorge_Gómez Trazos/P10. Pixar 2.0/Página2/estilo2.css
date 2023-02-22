@@ -1,0 +1,520 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    /* min-width: 465px */
+}
+
+@import url('https://css.gg/menu.css');
+
+@font-face {
+    font-family: "Brandon Regular";
+    src: url(fonts2/BrandonGrotesque-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque Black';
+    src: url(fonts2/BrandonGrotesque-Black.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque Medium';
+    src: url(fonts2/BrandonGrotesque-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Futura Light";
+    src: url(fonts2/futura\ light\ bt.ttf);
+}
+
+
+@font-face {
+    font-family: "Futura";
+    src: url(fonts2/futur.ttf);
+}
+
+* {
+box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* height: 145vh; */
+    /* font-family: 'Alata'; */
+    font-weight: 400;
+    font-size: 22px;
+    background-color: #fff;
+    letter-spacing: 3px;
+    line-height: 1.7em;
+}
+
+
+nav{
+    width: 100%;
+    height: 105px;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    padding-left: 120px;
+    padding-right: 160px;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 30%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.pixar>a>img{
+    width: 100%;
+    height: 100%;
+    min-width: 144.09px;
+}
+
+.menuOrdenador{
+    width: 70%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.menu-style{
+    margin: 0 15px;
+    font-family: "Brandon Grotesque Medium";
+    font-size: 15px;
+    letter-spacing: 0.14em;
+    white-space: nowrap;
+    cursor: pointer;
+    color: #1d1d1d;
+    text-decoration: none;
+    background: none;
+    position: relative;
+}
+
+.menu-container{
+    position: absolute;
+    top: 100%;
+    display: none;
+    padding-top: 10px;
+    left: -13px;
+    z-index: 1000000;
+    
+}
+
+.pequeMenu{
+    background-color: #1d1d1d;
+    color: white;
+    padding: 15px;
+    font-family: 'Brandon Regular';
+    font-size: 15px;
+    white-space: nowrap;
+    line-height: 25px;
+}
+
+
+.menuMovil{
+    display: none;
+    width: 70%;
+}
+
+.menu-style:hover>.menu-container{
+    display: block;
+    z-index: 100000000;
+}
+
+.menu-style:hover{
+    color: rgba(74, 74, 74, 0.4);
+} 
+
+.gris:hover{
+    color: rgb(183, 183, 183);
+}
+
+
+.caja1{
+    max-height: 700px;
+    background-color: rgb(115, 0, 0);
+    width: 100%;
+}
+
+.pixar2{
+    background-image: url("img2/ctoons_head.jpeg");
+    width: 100%;
+    height: 53.5vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 50;
+
+    position: relative;
+    background-attachment: fixed;
+    background-position: center -65px;
+}
+  
+.caja{
+    width: 100%;
+    height: 100%;
+    padding: 250px 100px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.caja h2{
+    font-family: "Brandon Grotesque Black";
+    font-size: 51px;
+    white-space: nowrap;
+    letter-spacing: .29em;
+    line-height: 1em;
+    /* text-transform: uppercase; */
+    color: white;
+}
+
+.caja2{
+    width: 100%;
+    min-height: 800px;
+    padding: 190px 142px;
+}
+
+.caja2-posicion{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.card{
+    margin-top: 40px;
+    width: 23%;
+}
+
+.card-text{
+    text-align: center;
+    white-space: nowrap;
+    margin-top: -24px;
+}
+
+.card-text>p{
+    margin: 0;
+    font-family:"Futura Light";
+    font-size: 12px;
+    letter-spacing: 0.1em;
+
+
+}
+
+.imagen{
+    padding: 0px 17px 17px;
+    text-align: center;
+    align-items: center;
+}
+
+.imagen img{
+    width: 73%;
+    text-align: center;
+
+}   
+
+.caja3{
+    /* height: 300vh; */
+    padding-left: 150px;
+    padding-right: 150px;
+
+}
+
+.container{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.raya{
+    width: 16.65%;
+    height: 6vh;
+    margin-top: 12px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 17px;
+    padding-right: 17px;
+    border-top: 1px solid rgb(210, 210, 210);
+    position: relative;
+
+}
+
+.box{
+    width: 100%;
+    position: relative;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.box__boxleft{
+    width: 55%;
+    padding: 15px;
+}
+
+.box__boxleft>.boxleft__img{
+    width: 100%;
+}
+
+.box__boxright{
+    width: 55%;
+    margin: 0;
+    padding: 15px;
+}
+
+.boxright__titulo{
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    letter-spacing: 0em;
+    font-family: 'Brandon Regular';
+    font-size: 39px;
+    text-align: left;
+    color: #1d1d1d;
+}
+
+.boxright__text{
+    font-family: "Futura Light";
+    font-size: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1d1d1db3;
+}
+
+.resaltado__boxright__text{
+    font-family: "Futura";
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.resaltado2__boxright__text{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.caja4 {
+    width: 100%;
+    /* min-height: 270px; */
+    /* padding: 0px 140px; */
+    font-family: "Brandon Regular";
+    margin-top: 200px;
+}
+  
+.contacto {
+    width: 100%;
+    height: 40px;
+}
+  
+.contacto-posicion {
+    width: 15%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.hover-box {
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.hover-box:hover {
+    color: #a2a2a2;
+    transition: all 0.3s;
+}
+
+.hover-box .icon-position:hover {
+    color: #1d1d1d;
+}
+
+.iconos {
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icon-position {
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.politica {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.politica-texto {
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+}
+
+.politica-style {
+    cursor: pointer;
+    color: #1d1d1d;
+    background: none;
+    white-space: nowrap;
+    letter-spacing: 4px;
+    padding-bottom: 10px;
+    
+}
+
+.politica-style:hover {
+    color: #a2a2a2;
+    transition: all 0.3s;
+}
+
+.green-box {
+    height: auto;
+    margin: auto;
+    height: 20%;
+    color: #68b631;
+    border: 1px solid #68b631;
+    white-space: normal;
+    white-space: nowrap;
+    padding: 0.8em 2em;
+    font-size: 0.8em;
+    line-height: 1.2;
+    cursor: pointer;
+    background-color: rgb(233, 233, 233);
+
+    display: flex;
+    align-items: center;
+}
+
+.green-box:hover {
+    background-color: #68b631;
+    transition: all 0.2s;
+}
+
+.years {
+    padding-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+.green-text {
+    font-size: 15px;
+    color: #68b631;
+}
+
+.green-box:hover .green-text {
+    color: white;
+}
+
+.caja5 {
+    width: 100%;
+    height: 40px;
+}
+
+
+
+
+
+@media (max-width:1520px) {
+    
+    .caja3{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+}
+
+@media (max-width:1500px) {
+    
+    .caja2{
+        padding: 0;
+        padding-top: 35px;
+    }
+
+}
+
+@media (max-width:1390px){
+
+    .menuMovil{
+        display: flex;
+
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .menuOrdenador{
+        display: none;
+    }
+
+    nav{
+        background-color: white;
+        position: fixed;
+        top: 0;
+        z-index: 100000000;
+    }
+
+}
+
+@media (max-width:767px) {
+    
+    .card{
+        width: 36%;
+       
+    }
+
+    .caja2{
+        padding: 0;
+        padding-top: 35px;
+    }
+
+}
+
+@media (max-width:666px) {
+    
+    .box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    }
+
+    .box__boxleft{
+        width: auto;
+    }
+
+    .box__boxright{
+        width: auto;
+    }
+}
+
+
