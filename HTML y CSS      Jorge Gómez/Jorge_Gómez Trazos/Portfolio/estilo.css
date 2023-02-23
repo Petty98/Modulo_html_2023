@@ -1,0 +1,144 @@
+/* 
+@font-face {
+    font-family: "Oswald";
+    src: url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+    font-weight: 400;
+} */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 200vh;
+}
+
+
+nav{
+    width: 100%;
+    height: 105px;
+
+    padding-top: 38px;
+    padding-bottom: 38px;
+    padding-left: 120px;
+    padding-right: 160px;
+
+    font-family: "Oswald";
+    font-weight: 400;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.marca>img{
+    width: 100%;
+    height: 100%;
+    min-width: 144.09px;
+}
+
+.menuOrdenador{
+    width: 70%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.menuMovil{
+    display: none;
+    width: 70%;
+}
+
+.menu-style{
+    margin: 0 15px; 
+    font-size: 16px;
+    letter-spacing: 0.07em;
+    display: block;
+    white-space: nowrap;
+    cursor: pointer;
+    color: #1d1d1d;
+    text-decoration: none;
+    background: none;
+    position: relative;
+}
+
+.si:hover{
+    color: rgb(22, 138, 26);
+}
+
+.aparece{
+    width: 177px;
+    display: none;
+    text-align: center;
+}
+
+/* .content-sepira{
+    
+} */
+
+.content-sepira:hover>.sepira{
+    display: none;
+}
+
+.content-sepira:hover>.aparece{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+/* .menu-container{
+    position: absolute;
+    top: 100%;
+    display: none;
+    padding-top: 10px;
+    left: -13px;
+    z-index: 1000000;
+
+}
+.pequeMenu{
+    background-color: #1d1d1d;
+    color: white;
+    padding: 15px;
+    font-family: 'Brandon Regular';
+    font-size: 15px;
+    white-space: nowrap;
+    line-height: 25px;
+
+}
+
+.si:hover>.menu-container{
+    display: block;
+    z-index: 100000000;
+}
+
+.menu-style:hover{
+    color: rgba(29, 29, 29, 0.4);
+}
+
+.enlace{
+    text-decoration: none;
+    color: white;
+}
+
+.gris:hover, .enlace:hover{
+    color: rgb(183, 183, 183);
+} */

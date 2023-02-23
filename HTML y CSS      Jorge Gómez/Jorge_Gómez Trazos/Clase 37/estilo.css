@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /* margin: 30px; */
+    background-color: beige;
+    min-height: 100vh;
+    cursor: crosshair;
+}
+
+.circulo{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 50%;
+
+    position: fixed;
+    top: 100px;
+
+}   
