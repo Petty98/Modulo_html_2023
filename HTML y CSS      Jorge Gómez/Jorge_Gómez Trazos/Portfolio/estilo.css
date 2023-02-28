@@ -4,10 +4,10 @@
 
 
 
-@font-face {
+/* @font-face {
     font-family: "Circular";
     src: url(fonts/circular-std-medium-500.ttf);
-}
+} */
 /* @font-face {
     font-family: "Oswald";
     src: url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
@@ -41,6 +41,7 @@ nav{
     justify-content: center;
 
     position: relative;
+    z-index: 10 ;
     background-color: #111111;
 
 }
@@ -134,9 +135,11 @@ nav{
 
 .contenido{
     width: 100%;
-    padding: 30px;
-    gap: 40px;
+    padding: 76px;
+    gap: 65px;
     background-color: white;
+    position: relative;
+    overflow: hidden;
 
     display: flex;
     flex-direction: row;
@@ -145,17 +148,15 @@ nav{
 }
 .container-card{
     width: 14%;
-    min-width: 14%;
-    padding: 60px;
+    display: flex;
 
+    justify-content: center;
     /* Poner más tarde */
     /* padding-bottom: 0px; */
 }
 
 .card{
-    /* margin-top: 40px; */
-    /* width: 8.33%; */
-    /* transform: translate(42px , -12px); */
+    width: 157px;
     position: relative;
     top: 0px;
     left: 0px;
@@ -266,10 +267,28 @@ nav{
     transform: rotateY(0deg);
 }
 
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    top: -412px;
+}
+
+.content {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    padding-top: 100px;
+    text-align: center;
+  }
+  
+  
 
 
 
-/* Empieza cajaFodno2*/
+/* Empieza cajaFondo2*/
 
 .cajaFondo2{
     width: 100%;
