@@ -151,7 +151,7 @@ nav{
     padding: 76px;
     padding-top: 190px;
     gap: 65px;
-    box-shadow: inset -15px -15px 20px 0px rgb(0 0 0 / 53%);
+    box-shadow: inset -15px -15px 20px 0px rgb(0 0 0 / 56%);
     background-color: transparent;
     position: absolute;
     top: 0;
@@ -240,6 +240,7 @@ nav{
 }
 
 .imagen{
+    padding: 15px;
     text-align: center;
     align-items: center;
     transition-duration: 0.6s;
@@ -328,6 +329,48 @@ nav{
     box-shadow: 0px 0px 50px rgba(0,0,0,1);
 }
 
+/* Loader */
+/* @keyframes loader{
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+
+    }
+}
+
+.loader-container {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader::after,
+.loader::before{
+    animation: loader 2s linear infinite;
+    content: "";
+    border: 2px solid rgb(255, 0, 0);
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    border-radius: 50%; 
+}
+
+.loader::after{
+    opacity: 0;
+    animation-delay: 1s;
+} */
 
 /* .menu-container{
 
