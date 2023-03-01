@@ -31,7 +31,25 @@
 // })
 
 
-window.addEventListener('load', function() {
-    const loader = document.querySelector('.loader-container');
-    loader.classList.add('hide');
-  });
+// console.log('*****INICIO*****')
+
+
+// // $(window).load(function(){
+
+// //   $('.loader-container').addClass('hide')
+// //   console.log('LOAD')
+
+
+// // })
+
+// window.addEventListener('load', function() {
+
+//   // setTimeout(function(){
+
+//     $('.loader-container').addClass('hide')
+//   // },3000)
+
+//     // const loader = document.querySelector('.loader-container');
+//     // loader.classList.add('hide');
+//     console.log('LOAD')
+// });

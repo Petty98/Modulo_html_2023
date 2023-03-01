@@ -6,8 +6,10 @@
 
 @font-face {
     font-family: "Circular";
+    font-display: "swap";
     src: url(fonts/circular-std-medium-500.ttf);
 }
+
 /* @font-face {
     font-family: "Oswald";
     src: url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
@@ -26,15 +28,13 @@ body{
 nav{
     width: 100%;
     height: 105px;
-
-    padding-top: 38px;
-    padding-bottom: 38px;
-    padding-left: 120px;
-    padding-right: 160px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     font-family: "Oswald";
     font-weight: 400;
     
+    gap: 228px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -47,12 +47,30 @@ nav{
 }
 
 .logo{
-    width: 30%;
+    /* width: 30%; */
     height: 100%;
 
     display: flex;
+    align-items: center;
     flex-direction: row;
-    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.marca>h1{
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    color: transparent;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    background-image: linear-gradient(
+        180deg,
+        #ffe993,
+        #eb831c
+        );
+    background-clip: text;
+    -webkit-background-clip: text;
+
 }
 
 .marca>img{
@@ -67,7 +85,7 @@ nav{
     
     display: flex;
     flex-direction: row;
-    /* justify-content: flex-end; */
+    align-items: center;
     gap: 28px;
 }
 
@@ -148,23 +166,27 @@ nav{
 .contenido{
     width: 100%;
     height: 100%;
-    padding: 76px;
+    padding: 120px;
     padding-top: 190px;
     gap: 65px;
     box-shadow: inset -15px -15px 20px 0px rgb(0 0 0 / 56%);
     background-color: transparent;
+
     position: absolute;
     top: 0;
     left: 0;
-    /* overflow: hidden; */
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
+    align-items: center;
 }
+
 .container-card{
     width: 12%;
+    padding: 27px;
     display: flex;
 
     justify-content: center;
@@ -173,7 +195,7 @@ nav{
 }
 
 .card{
-    width: 157px;
+    /* width: 157px; */
     position: relative;
     top: 0px;
     left: 0px;
@@ -240,7 +262,7 @@ nav{
 }
 
 .imagen{
-    padding: 15px;
+    /* padding: 15px; */
     text-align: center;
     align-items: center;
     transition-duration: 0.6s;
@@ -286,6 +308,7 @@ nav{
 
 #myVideo {
     width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -329,6 +352,8 @@ nav{
     box-shadow: 0px 0px 50px rgba(0,0,0,1);
 }
 
+
+
 /* Loader */
 /* @keyframes loader{
     0% {
@@ -370,6 +395,10 @@ nav{
 .loader::after{
     opacity: 0;
     animation-delay: 1s;
+}
+
+.hide{
+    display: none;
 } */
 
 /* .menu-container{
@@ -411,11 +440,59 @@ nav{
     color: rgb(183, 183, 183);
 } */
 
+@media (max-width: 1942px){
+    
+    nav{
+        gap: 100px;
+    }
+
+}
+
+
+@media (max-width: 1814px){
+    
+    nav{
+        height: 223px;
+        gap: 18px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo{
+        height: auto;
+    }
+
+    .menuOrdenador{
+        height: auto;
+    }
+
+    .contenido{
+        padding-top: 303px;
+    }
+
+    .container-card{
+        padding: 1%;
+    }
+
+}
+
 
 @media (max-width: 1312px){
     
     .container-card{
         width: 11%;
+    }
+
+}
+
+@media (max-width: 1415px){
+    
+    .container-card{
+        width: 11%;
+        padding: 0;
     }
 
 }
