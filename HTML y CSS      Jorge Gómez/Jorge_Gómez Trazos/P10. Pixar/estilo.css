@@ -428,3 +428,12 @@ nav{
 .gg-menu::after {
     top: 6px
 }
+
+
+.icono__menu{
+    display: none;
+}
+
+.activo{
+    display: block;
+}

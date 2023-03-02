@@ -41,6 +41,7 @@ nav{
     justify-content: center;
 
     position: fixed;
+    top: 0;
     z-index: 10 ;
     background-color: #111111;
 
@@ -91,11 +92,22 @@ nav{
 
 .menuMovil{
     display: none;
-    width: 70%;
+    height: 100%;
+    padding-top: 9px;
+    margin-left: 20px;
+}
+
+.icono__menu{
+    display: none;
+    color: white;
+    transform: scale(1.6);
+}
+
+.activo{
+    display: block;
 }
 
 .menu-style{
-    /* margin: 0 15px;  */
     font-size: 18px;
     letter-spacing: 0.07em;
 
@@ -108,9 +120,29 @@ nav{
     position: relative;
 }
 
+.menu-styleII{
+    font-size: 18px;
+    letter-spacing: 0.07em;
+    width: 100%;
+    margin: auto;
+
+    display: block;
+    white-space: nowrap;
+    cursor: pointer;
+    color: #111111;
+    text-decoration: none;
+    background: none;
+    position: relative;
+}
+
 .si:hover{
     color: rgb(255, 255, 255);
     text-shadow: 0px 0px 7px #ffffff;
+}
+
+.siII:hover{
+    color: rgb(50, 50, 50);
+    text-shadow: 1px 1px 2px #000000;
 }
 
 .aparece{
@@ -141,6 +173,23 @@ nav{
     text-align: center;
 }
 
+.menu_abierto{
+    /* display: none; */
+    text-align: center;
+    line-height: 30px;
+    background-color: white;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    padding: 19px;
+    border-radius: 6px;
+    width: 50%;
+    min-width: 300px;
+    right: 0;
+    margin: auto;
+
+}
+
 
 
 
@@ -149,13 +198,14 @@ nav{
 
 .cajaFondo1{
     width: 100%;
-    height: 200vh;
+    min-height: 200vh;
     background-color: #1a1a1a;
 }
 
 .CajaFuera{
     width: 100%;
-    height: 66.5vh;
+    /* height: 30%; */
+    margin-top: 104px;
     position: relative;
     top: 0px;
     left: 0px;
@@ -165,14 +215,14 @@ nav{
 
 .contenido{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     padding: 120px;
-    padding-top: 190px;
+    /* padding-top: 190px; */
     gap: 65px;
     box-shadow: inset -15px -15px 20px 0px rgb(0 0 0 / 56%);
     background-color: transparent;
 
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
 
@@ -469,12 +519,12 @@ nav{
         height: auto;
     }
 
-    .contenido{
-        padding-top: 303px;
-    }
-
     .container-card{
         padding: 1%;
+    }
+
+    .CajaFuera{
+        margin-top: 222px;
     }
 
 }
@@ -495,4 +545,67 @@ nav{
         padding: 0;
     }
 
+}
+
+@media (max-width: 1210px){
+    
+    .container-card{
+        width: 11%;
+    }
+
+    .contenido{
+        gap: 53px;
+    }
+
+}
+
+@media (max-width:1448px){
+
+    .menuMovil{
+        display: flex;
+
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .menuOrdenador{
+        display: none;
+    }
+
+    nav{
+        height: 130px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .CajaFuera{
+        margin-top: 130px;
+    }
+}
+
+
+
+.gg-menu {
+    transform: scale(var(--ggs,1))
+}
+.gg-menu,
+.gg-menu::after,
+.gg-menu::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background: currentColor
+}
+.gg-menu::after,
+.gg-menu::before {
+    content: "";
+    position: absolute;
+    top: -6px
+}
+.gg-menu::after {
+    top: 6px
 }
