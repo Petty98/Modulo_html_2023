@@ -53,3 +53,61 @@
 //     // loader.classList.add('hide');
 //     console.log('LOAD')
 // });
+
+
+
+
+
+
+
+// Creando un evento de click
+
+
+$("#btnOpen").click(function () {
+
+    // Crear un evento
+
+    console.log( 'Click en el botón' )
+
+    // Quitar la clase activo a #btnOpen
+    $('#btnOpen').removeClass( 'activo' )
+
+
+    $('#btnClose').addClass( 'activo' )
+
+    $('.CajaTransparente').removeClass( 'blocked' )
+    console.log($('.CajaTransparente'))
+
+});
+
+
+
+$("#btnClose").click(function () {
+
+    // Crear un evento
+
+    console.log( 'Click en el botón' )
+
+    $('#btnClose').removeClass( 'activo' )
+    $('#btnOpen').addClass( 'activo' )
+
+
+    $('.CajaTransparente').addClass( 'blocked' )
+
+});
+
+
+
+$(".CajaTransparente").click(function () {
+
+    // Crear un evento
+
+    console.log( 'Click en Caja transaprente' )
+
+    $('.CajaTransparente').addClass( 'blocked' )
+
+    $('#btnClose').removeClass( 'activo' )
+    $('#btnOpen').addClass( 'activo' )
+   
+
+});

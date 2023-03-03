@@ -40,7 +40,7 @@ nav{
     flex-wrap: wrap;
     justify-content: center;
 
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 10 ;
     background-color: #111111;
@@ -90,6 +90,15 @@ nav{
     gap: 28px;
 }
 
+.CajaTransparente{
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 .menuMovil{
     display: none;
     height: 100%;
@@ -104,7 +113,7 @@ nav{
 }
 
 .activo{
-    display: block;
+    display: flex;
 }
 
 .menu-style{
@@ -125,6 +134,7 @@ nav{
     letter-spacing: 0.07em;
     width: 100%;
     margin: auto;
+    user-select: none;
 
     display: block;
     white-space: nowrap;
@@ -174,12 +184,11 @@ nav{
 }
 
 .menu_abierto{
-    /* display: none; */
     text-align: center;
     line-height: 30px;
     background-color: white;
     position: absolute;
-    top: 90%;
+    top: 13%;
     left: 0;
     padding: 19px;
     border-radius: 6px;
@@ -187,8 +196,59 @@ nav{
     min-width: 300px;
     right: 0;
     margin: auto;
-
+    user-select: none;
 }
+
+.blocked{
+    display: none;
+}
+
+#btnOpen{
+    user-select: none;
+    height: 22px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#btnClose{
+    user-select: none;
+}
+
+/* Empieza .cajaFondo0 */
+
+.cajaFondo0{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* margin-top: 130px; */
+    background-color: #1a1a1a;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.texto{
+    width: 50%;
+    color: white;
+}
+
+.imagen_home{
+    width: 50%;
+    color: white;
+}
+
+
+
 
 
 
@@ -198,7 +258,7 @@ nav{
 
 .cajaFondo1{
     width: 100%;
-    min-height: 200vh;
+    /* min-height: 200vh; */
     background-color: #1a1a1a;
 }
 
@@ -210,7 +270,6 @@ nav{
     top: 0px;
     left: 0px;
     overflow: hidden;
-
 }
 
 .contenido{
@@ -359,6 +418,7 @@ nav{
 #myVideo {
     width: 100%;
     height: 100%;
+    filter: blur(10);
     position: absolute;
     top: 0;
     left: 0;
