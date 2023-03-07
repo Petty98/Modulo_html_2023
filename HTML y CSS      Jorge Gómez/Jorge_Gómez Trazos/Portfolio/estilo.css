@@ -216,6 +216,9 @@ nav{
     user-select: none;
 }
 
+
+
+
 /* Empieza .cajaFondo0 */
 
 .cajaFondo0{
@@ -223,12 +226,17 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     /* margin-top: 130px; */
     background-color: #1a1a1a;
 }
 
 .about{
+    height: 100vh;
+    padding: 150px;
+    gap: 81px;
+    text-align: justify;
+
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -237,14 +245,44 @@ nav{
     align-content: center;
 }
 
-.texto{
+.columnaUno{
     width: 50%;
+
+    position: relative;
+    top: -73px;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.columnaUno>h2{
     color: white;
+    font-family: sans-serif;
+    text-align: start;
+}
+
+.texto{
+    color: white;
+    font-family: sans-serif;
+    line-height: 20px;
+    font-size: 18px;
 }
 
 .imagen_home{
     width: 50%;
     color: white;
+    font-family: sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+}
+
+.imagen_home>img{
+    width: 800px;
 }
 
 
@@ -265,7 +303,7 @@ nav{
 .CajaFuera{
     width: 100%;
     /* height: 30%; */
-    margin-top: 104px;
+    /* margin-top: 104px; */
     position: relative;
     top: 0px;
     left: 0px;
@@ -418,7 +456,7 @@ nav{
 #myVideo {
     width: 100%;
     height: 100%;
-    filter: blur(10);
+    filter: blur(2.5px);
     position: absolute;
     top: 0;
     left: 0;
@@ -584,11 +622,25 @@ nav{
     }
 
     .CajaFuera{
-        margin-top: 222px;
+        /* margin-top: 222px; */
     }
 
 }
 
+
+@media (max-width: 1785px){
+    
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .columnaUno {
+        top: 0px;
+        width: 100%;
+    }
+
+}
 
 @media (max-width: 1312px){
     
@@ -640,7 +692,7 @@ nav{
     }
 
     .CajaFuera{
-        margin-top: 130px;
+        /* margin-top: 130px; */
     }
 }
 
