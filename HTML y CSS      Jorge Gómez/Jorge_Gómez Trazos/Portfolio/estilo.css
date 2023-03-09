@@ -10,6 +10,24 @@
     src: url(fonts/circular-std-medium-500.ttf);
 }
 
+@font-face {
+    font-family: "Great";
+    font-display: "swap";
+    src: url(fonts/GreatVibes-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Yester";
+    font-display: "swap";
+    src: url(fonts/Yesteryear-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Stale";
+    font-display: "swap";
+    src: url(fonts/Stalemate-Regular.ttf);
+}
+
 /* @font-face {
     font-family: "Oswald";
     src: url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
@@ -113,6 +131,7 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
 }
 
 .menuMovil{
@@ -164,6 +183,14 @@ nav{
     text-shadow: 0px 0px 7px #ffffff;
 }
 
+.color{
+    color: black;
+}
+
+.menu-style.si.color:hover{
+    color: rgb(50, 50, 50);
+    text-shadow: 1px 1px 2px #000000;
+}
 
 .menu-styleII{
     font-size: 18px;
@@ -192,7 +219,7 @@ nav{
 }
 
 .aparece{
-    width: 199px;
+    width: 137.20px;
     display: none;
     text-align: center;
 }
@@ -208,13 +235,13 @@ nav{
 }
 
 .apareceII{
-    width: 173px;
+    width: 136.70px;
     display: none;
     text-align: center;
 }
 
 .apareceIII{
-    width: 150px;
+    width: 96px;
     display: none;
     text-align: center;
 }
@@ -250,6 +277,8 @@ nav{
 
 #btnClose{
     user-select: none;
+    cursor: pointer;
+    z-index: 100;
 }
 
 
@@ -267,9 +296,21 @@ nav{
     background-color: #1a1a1a;
 }
 
+.GraphicDesign{
+    font-family: "Stale";
+    color: transparent;
+    font-size: 161px;
+    /* font-weight: 600; */
+    letter-spacing: -0.015em;
+    background-image: linear-gradient( 180deg, #ffe993, #eb831c );
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
 .about{
     height: 100vh;
     padding: 150px;
+    /* padding-top: 0px; */
     gap: 81px;
     text-align: justify;
 
@@ -285,7 +326,7 @@ nav{
     width: 50%;
 
     position: relative;
-    top: -73px;
+    top: -129px;
     left: 0;
 
     display: flex;
@@ -296,13 +337,15 @@ nav{
     color: white;
     font-family: sans-serif;
     text-align: start;
+    font-size: 52px;
 }
 
 .texto{
     color: white;
     font-family: sans-serif;
-    line-height: 20px;
-    font-size: 18px;
+    line-height: 24px;
+    font-size: 21px;
+    margin-top: 30px;
 }
 
 .imagen_home{
@@ -573,6 +616,77 @@ nav{
 
 
 /* Empieza index2 */
+
+.fondo_caja{
+    width: 100%;
+    height: 100vh;
+    background-color: #1a1a1a;
+}
+
+.xxx{
+    width: 100%;
+    height: 100vh;
+}
+
+.dialogo{
+    width: 100%;
+    position: absolute;
+    top: 44px;
+    left: 62%;
+    z-index: 20000;
+}
+
+.dialogo>img{
+    width: 200px;
+    /* height: 300px; */
+}
+
+.cajonera{
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+#cajonera2{
+    width: 100%;
+    background-color: #1a1a1a;
+
+}
+
+.backG_psd{
+    width: 100%;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 33.33%;
+    padding: 10px;
+
+}
+
+.box>img{
+    width: 100%;
+    border-radius: 10px;
+    filter: saturate(0);
+}
+
+.box>img:hover{
+    filter: saturate(1);
+}
+
+.iconoII{
+    position: sticky;
+    bottom: 150px;
+    padding: 15px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
 
 
 
