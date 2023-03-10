@@ -63,6 +63,9 @@
 // Creando un evento de click
 
 
+
+// Index1
+
 $("#btnOpen").click(function () {
 
     // Crear un evento
@@ -110,4 +113,36 @@ $(".CajaTransparente").click(function () {
     $('#btnOpen').addClass( 'activo' )
    
 
+});
+
+
+
+
+
+
+// Index 2
+
+$(".box").click(function () {
+
+    // Crear un evento
+
+    console.log( 'Click en el botón' )
+
+
+    $('.pop_up_fondo').addClass( 'activo' )
+
+
+    $('.pop_up_fondo').removeClass( 'seva' )
+
+});
+
+
+$(".cerrar_popUp").click(function () {
+
+    // Crear un evento
+
+    console.log( 'Click en el botón' )
+
+
+    $('.pop_up_fondo').addClass( 'seva' )
 });
