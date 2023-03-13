@@ -132,7 +132,20 @@ $(".box").click(function () {
     $('.pop_up_fondo').addClass( 'activo' )
 
 
+    // Buscar la imagen del contenedor que ha sido clicado
+    // this -> hace referencia al elemento que ha sido clicado
+    console.log(this)
+    // Coger el src de la imagen
+    let src_clicado = $( this ).find( 'img' ).attr( 'src' );
+    console.log(src_clicado)
+
+    // Seleccionar y abri el pop up 
+
     $('.pop_up_fondo').removeClass( 'seva' )
+
+    // Cambiar el src de la imagen
+
+    $("#imagenPopUp").attr('src' , src_clicado )
 
 });
 

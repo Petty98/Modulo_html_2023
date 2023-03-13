@@ -304,7 +304,8 @@ nav{
 .GraphicDesign{
     font-family: "Stale";
     color: transparent;
-    font-size: 161px;
+    font-size: 10rem;
+    white-space: nowrap;
     /* font-weight: 600; */
     letter-spacing: -0.015em;
     background-image: linear-gradient( 180deg, #ffe993, #eb831c );
@@ -313,7 +314,7 @@ nav{
 }
 
 .about{
-    /* height: 100vh; */
+    height: 100vh;
     /* padding-top: 0px; */
     padding: 150px;
     padding-bottom: 0px;
@@ -325,7 +326,7 @@ nav{
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     align-content: center;
 }
 
@@ -449,7 +450,7 @@ nav{
 .contenidoII{
     width: 100%;
     height: 100%;
-    padding: 120px;
+    padding: 10%;
     /* padding-top: 190px; */
     gap: 65px;
     /* box-shadow: inset -15px -15px 20px 0px rgb(0 0 0 / 56%); */
@@ -725,6 +726,8 @@ nav{
 .xxx{
     width: 100%;
     height: 100vh;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 #myVideoII {
@@ -779,7 +782,7 @@ nav{
 
 #cajonera2{
     width: 100%;
-    height: 85vh;
+    padding: 50px;
     padding-top: 120px;
     background-color: #1a1a1a;
 
@@ -797,8 +800,8 @@ nav{
 }
 
 .box{
-    width: 33.33%;
-    padding: 15px;
+    width: 50%;
+    padding: 5%;
 
 }
 
@@ -806,6 +809,7 @@ nav{
     width: 100%;
     border-radius: 10px;
     filter: saturate(0);
+    transition: 0.5s;
 }
 
 .box>img:hover{
@@ -828,7 +832,7 @@ nav{
     margin: auto;
     position: fixed;
     z-index: 8;
-    top: 55px;
+    top: 0px;
 }
 
 .cerrar_popUp{
@@ -867,13 +871,14 @@ nav{
 }
 
 .pop_up>img{
-    width: 50%;
-    object-fit: cover;
+    /* width: 50%;
+    object-fit: cover; */
 }
 
 .cuadrado{
     width: 100%;
     margin: auto;
+    padding-top: 30px;
     background-color: #1a1a1a;
     display: flex;
     justify-content: center;
@@ -1043,6 +1048,7 @@ nav{
     .about{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .columnaUno {
@@ -1050,6 +1056,17 @@ nav{
         width: 100%;
     }
 
+    .columnaUno>h2 {
+        text-align: center;
+    }
+
+    .GraphicDesign {
+        text-align: center;
+    }
+
+    .texto{
+        text-align: center;
+    }
 }
 
 @media (max-width: 1612px) {
@@ -1078,6 +1095,10 @@ nav{
         flex-direction: row;
     }
 
+    .imagen_home {
+        width: 100%;
+    }
+
 }
 
 @media (max-width:1448px){
@@ -1088,6 +1109,8 @@ nav{
         justify-content: flex-end;
         align-items: center;
         z-index: 1000;
+        position: relative;
+        top: -6px;
     }
 
     .menuOrdenador{
@@ -1114,12 +1137,13 @@ nav{
 
 }
 
+
 @media (max-width: 1312px){
     
     .container-card{
         width: 11%;
     }
-
+    
 }
 
 
@@ -1128,11 +1152,131 @@ nav{
     .container-card{
         width: 11%;
     }
-
+    
     .contenido{
         gap: 53px;
     }
+    
+}
 
+@media (max-width: 1126px){
+    
+    .columnaUno>h2 {
+        font-size: 40px;
+    }
+    
+    .GraphicDesign {
+        font-size: 9rem;
+    }
+    
+    .texto{
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 1035px){
+    
+    .contenido{
+        padding: 9%;
+    }
+
+}
+
+@media (max-width: 965px){
+    
+    .contenido{
+        padding: 5%;
+    }
+
+}
+
+@media (max-width: 939px){
+    
+    .columnaUno>h2 {
+        font-size: 33px; 
+        text-align: center;      
+    }
+
+    .GraphicDesign {
+        font-size: 8rem;
+    }
+
+    .texto {
+        font-size: 17px;
+    }
+    .about{
+        padding: 40px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 880px){
+    
+    .contenido{
+        padding: 9%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-card{
+        width: 35%;
+        padding: 5%;
+    }
+
+    .box>img {
+        filter: saturate(1);
+    }
+}
+
+
+@media (max-width: 586px){
+    
+    .GraphicDesign{
+        font-size: 5rem;
+    }
+
+    .contenidoII{
+        padding: 14%;
+    }
+
+}
+
+@media (max-width: 575px){
+
+    .contenidoII{
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 422px){
+
+    #navII{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .about{
+        height: 100%;
+    }
+
+    .marca h1 {
+        margin: 0;
+        height: 51px;
+        font-family: system-ui, sans-serif;
+        color: transparent;
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: -0.015em;
+        background-image: linear-gradient( 180deg, #ffe993, #eb831c );
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
 }
 
 
