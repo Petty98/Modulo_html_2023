@@ -139,6 +139,16 @@ $(".box").click(function () {
     let src_clicado = $( this ).find( 'img' ).attr( 'src' );
     console.log(src_clicado)
 
+    // atributo data texto
+
+    let texto = $(this).data( 'texto' )
+    let titulo = $(this).data( 'titulo' )
+
+    console.log( texto )
+
+    $('.pop_up_fondo .p1').text( titulo ) 
+    $('.pop_up_fondo .p2').text( texto ) 
+
     // Seleccionar y abri el pop up 
 
     $('.pop_up_fondo').removeClass( 'seva' )
@@ -146,6 +156,14 @@ $(".box").click(function () {
     // Cambiar el src de la imagen
 
     $("#imagenPopUp").attr('src' , src_clicado )
+
+
+
+
+
+
+
+
 
 });
 
